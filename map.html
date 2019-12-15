@@ -1,6 +1,11 @@
 <html>
   <head>
     <style>
+      body {
+        font-family: Arial;
+        background: url(https://minecraft.gamepedia.com/media/2/26/Background.png);
+      }
+      
       #map {
         position: fixed;
         top: 50%;
@@ -10,7 +15,7 @@
 
       .plot {
         background: white;
-        font-size: 15px;
+        font-size: 13px;
         padding: 4px;
         position: absolute;
         opacity: 0.8;
@@ -54,9 +59,8 @@
       }
     </style>
   </head>
-  <body onclick="click()">
+  <body>
     <center>
-      <h1>CivCorp City Map</h1>
       <div id="map">
         <img src="https://cdn.discordapp.com/attachments/648050065159749643/648050473961783317/Screen_Shot_2019-11-23_at_9.58.44_PM.png"/>
         <div class="plot col-d row-2" id="d2">
