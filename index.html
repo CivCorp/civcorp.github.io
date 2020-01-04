@@ -1,209 +1,205 @@
-<body>
-  <center><h1>CivCorp FAQ</h1></center>
-  <h2>How do I sign legal documents?</h2>
-  <p>Because written signatures can be forged, CivCorp uses <a href="https://en.wikipedia.org/wiki/Digital_signature">digital signatures</a> to sign all legal documents. Digital signatures look something like the following.</p>
-  <pre>
--------BEGIN SIGNATURE------
+<html>
+    <head>
+        <title>CivCorp FAQ</title>
+        <style>
+img {
+    max-width: 50%;
+}
 
-IQB1AwUBMVSiA5QYCuMfgNYjAQFAKgL/ZkBfbeNEsbthba4BlrcnjaqbcKgNv+
-a5kr4537y8RCd+RHm75yYh5xxA1ojELwNhhb7cltrp2V7LlOnAelws4S87UX80c
-LBtBcN6AACf11qymC2h+Rb2j5SU+rmXWru+=QFMx
+.content {
+    margin: 0 auto;
+    width: 800px;
+}
 
-------END SIGNATURE------
-  </pre>
-  <p>The mathematics are complex, but the important part to understand is that digital signatures are mathematically impossible to forge, and they can be decrypted to see who signed them.</p>
-  <h3>Install Keybase</h3>
-  <p>To create and verify digital signatures we use <a href="https://keybase.io/">Keybase</a>. Setting up Keybase requires a few steps.</p>
-  <ol>
-    <li><a href="https://keybase.io/download">Download</a> and install Keybase.</li>
-    <li>If you are using a Mac, open up Terminal and run <code>keybase pgp gen</code>. This will set up your <a href="https://en.wikipedia.org/wiki/Pretty_Good_Privacy">PGP keys</a> which are used to sign documents.</li>
-  </ol>
-  <h3>Sign documents with Keybase</h3>
-  <p>To sign documents do the following:</p>
-  <ol>
-    <li>Copy the exact content of the document to your clipboard.</li>
-    <li>If you are using a Mac, open up Terminal and run <code>pbpaste | keybase pgp sign | pbcopy</code>.</li>
-    <li>Edit the signature into the document where a signature would normally go.</li>
-  </ol>
-  <p>For example, look at the Minutes of the 1st Meeting of the Board of Directors, which contains two digital signatures by TheLoneTopWolfx and MCSPenguin.</p>
-  <pre>
-********************************************************************************
-CivCorp
-********************************************************************************
-================================================================================
-Minutes of the 1st Meeting of the Board of Directors
-================================================================================
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-:Date: November 10, 2019
-:Time: 19:00 PST
-
-The Board of Directors held its first meeting on November 10, 2019.
-
-.. sectnum::
-
-Attendance
-********************************************************************************
-
-The following members of the Board of Directors (2 of 2) were present at the
-meeting:
-
-1. TheLoneTopWolfx
-2. MCSPenguin
-
-No directors were absent.
-
-A quorum of directors was present.
-
-New Business
-********************************************************************************
-
-On motion and by unanimous vote, TheLoneTopWolfx was elected temporary
-Secretary.
-
-RESOLVED, that the Bylaws hosted at https://pastebin.com/raw/JjnVTPsP are
-hereby adopted as the Bylaws of the Corporation.
-
-RESOLVED FURTHER, that MCSPenguin shall be the President of the Corporation.
-
-RESOLVED FURTHER, that TheLoneTopWolfx shall be the Secretary of the
-Corporation and the Treasurer of the Corporation.
-
-RESOLVED FURTHER, that the number of Board of Directors shall be increased from
-2 to 3.
-
-RESOLVED FURTHER, that Convoy (a.k.a. Player) shall become a Director of the
-Corporation.
-
-Adjournment
-********************************************************************************
-
-There being no further business, the meeting was adjourned at 19:05 PST.
-
-November 10, 2019
-
-TheLoneTopWolfx
-Secretary
-
------BEGIN PGP MESSAGE-----
-Comment: https://keybase.io/download
-Version: Keybase Go 4.7.2 (darwin)
-
-xA0DAAoB2SraTO49zEMBy+F0AOIAAAAA6ioqKioqKioqKioqKioqKioqKioqKioq
-KioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq
-KioqKioqKioqCkNpdkNvcnAKKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq
-KioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq
-KioKPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
-PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KTWludXRlcyBvZiB0
-aGUgMXN0IE1lZXRpbmcgb2YgdGhlIEJvYXJkIG9mIERpcmVjdG9ycwo9PT09PT09
-PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
-PT09PT09PT09PT09PT09PT09PT09PT09PQoKOkRhdGU6IE5vdmVtYmVyIDEwLCAy
-MDE5CjpUaW1lOiAxOTowMCBQU1QKClRoZSBCb2FyZCBvZiBEaXJlY3RvcnMgaGVs
-ZCBpdHMgZmlyc3QgbWVldGluZyBvbiBOb3ZlbWJlciAxMCwgMjAxOS4KCi4uIHNl
-Y3RudW06OgoKQXR0ZW5kYW5jZQoqKioqKioqKioqKioqKioqKioqKioqKioqKioq
-KioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq
-KioqKgoKVGhlIGZvbGxvd2luZyBtZW1iZXJzIG9mIHRoZSBCb2FyZCBvZiBEaXJl
-Y3RvcnMgKDIgb2YgMikgd2VyZSBwcmVzZW50IGF0IHRoZQptZWV0aW5nOgoKMS4g
-VGhlTG9uZVRvcFdvbGZ4CjIuIE1DU1Blbmd1aW4KCk5vIGRpcmVjdG9ycyB3ZXJl
-IGFic2VudC4KCkEgcXVvcnVtIG9mIGRpcmVjdG9ycyB3YXMgcHJlc2VudC4KCk5l
-dyBCdXNpbmVzcwoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq
-KioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKgoKT24g
-bW90aW9uIGFuZCBieSB1bmFuaW1vdXMgdm90ZSwgVGhlTG9uZVRvcFdvbGZ4IHdh
-cyBlbGVjdGVkIHRlbXBvcmFyeQpTZWNyZXRhcnkuCgpSRVNPTFZFRCwgdGhhdCB0
-aGUgQnlsYXdzIGhvc3RlZCBhdCBodHRwczovL3Bhc3RlYmluLmNvbS/pcmF3L0pq
-blZUUHNQIGFyZQpoZXJlYnkgYWRvcHRlZCBhcyB0aGUgQnlsYXdzIG9mIHRoZSBD
-b3Jwb3JhdGlvbi4KClJFU09MVkVEIEZVUlRIRVIsIHRoYXQgTUNTUGVuZ3VpbiBz
-aGFsbCBiZSB0aGUgUHJlc2lkZW50IG9mIHRoZSBDb3Jwb3JhdGlvbi4KClJFU09M
-VkVEIEZVUlRIRVIsIHRoYXQgVGhlTG9uZVRvcFdvbGZ4IHNoYWxsIGJlIHRoZSBT
-ZWNyZXRhcnkgb2YgdGhlCkNvcnBvcmF0aW9uIGFuZCB0aGUgVHJlYXN1cmVyIG9m
-IHRoZSBDb3Jwb3JhdGlvbi4KClJFU09MVkVEIEZVUlRIRVIsIHRoYXQgdGhlIG51
-bWJlciBvZiBCb2FyZCBvZiBEaXJlY3RvcnMgc2hhbGwgYmUgaW5jcmVhc2VkIGZy
-b20KMiB0byAzLgoKUkVTT0xWRUQgRlVSVEhFUiwgdGhhdCBDb252b3kgKGEuay5h
-LiBQbGF5ZXIpIHNoYWxsIGJlY29tZSBhIERpcmVjdG9yIG9mIHRoZQpDb3Jwb3Jh
-dGlvbi4KCkFkam91cm5tZW50CioqKioqKioqKioqKioqKioqKioqKioqKioqKioq
-KioqKioqKioqKioqKioqKioqKioqKioqKirnKioqKioqKioqKioqKioqKioqKioq
-KioqKgoKVGhlcmUgYmVpbmcgbm8gZnVydGhlciBidXNpbmVzcywgdGhlIG1lZXRp
-bmcgd2FzIGFkam91cm5lZCBhdCAxOTowNSBQU1QuCgpOb3ZlbWJlciAxMCwgMjAx
-OQoKVGhlTG9uZVTkb3BXb2xmeApTZWNyZXRhcuB5AMLBXAQAAQoAEAUCXcntuAkQ
-2SraTO49zEMAAKRjEACkykGUebNTdY5ND8hsyT3wEOFUrBJfR8XpEnrCfa4fXt2/
-X/7H/tKo1onZQ2S44W+FfrE5KMU1lwja5jZh/I3/0s/fddh1f/MYHds79ZnEoYaD
-PhLj8lkc8rCQrPPcvcMd25NaLHdZT5yv7kXz+m7sLo9e1wAP6wjrLfJip8UJJGil
-5RzQ+Js9FL+cisKI4ksDaxlvQbyEeSsjRZgXc29YAy/KTwDutUNpptPgzOlVLQxZ
-aMIAQxAkcJdmGWtt7KmyOwpkZVg5B0oY4E+Ofc988qwKSiGmb2gZ97LCBND+KOJO
-6ZHsJly2T2EvPEudnIKGbdrTaoUPkvuNRGsZcQS+TyrS9wHCFNR4eD7s5DMtapHk
-rWaUoRXfsK0sZ4BmJ8cpvwUzAsxHKR+o3tyAcCp4bEtWvUiWWjT0EB++LLo83MCB
-hm9qU3E6RcVlj5FqLM42720WaN95dfWxHeXNVahSpEhjLgjmDV/9kEGfNVsz0/SF
-BZLXRoKq5982985hySzmJQgitOb44k+GTUTsW1bTbaNuO2+sYJBOuywDLqVImNtE
-e9PJJGNAsuvza6Nsw3BTDtTS9e6DXT+GBXiVXTB5c9glw68J1ezEQLV2w4XtVGBa
-KWEuzKrFLKlzd1bV9ycEPwi2x6zmbBW/YU07AF/J3kVINliX7rZJb5g9LyhGcw==
-=vlL4
------END PGP MESSAGE-----
-
-MCSPenguin
-President
-
------BEGIN PGP MESSAGE-----
-Comment: https://keybase.io/download
-Version: Keybase Go 4.7.2 (darwin)
-
-xA0DAAoB08Eq7Qdjre8By+F0AOIAAAAA6ioqKioqKioqKioqKioqKioqKioqKioq
-KioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq
-KioqKioqKioqCkNpdkNvcnAKKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq
-KioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq
-KioKPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
-PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KTWludXRlcyBvZiB0
-aGUgMXN0IE1lZXRpbmcgb2YgdGhlIEJvYXJkIG9mIERpcmVjdG9ycwo9PT09PT09
-PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
-PT09PT09PT09PT09PT09PT09PT09PT09PQoKOkRhdGU6IE5vdmVtYmVyIDEwLCAy
-MDE5CjpUaW1lOiAxOTowMCBQU1QKClRoZSBCb2FyZCBvZiBEaXJlY3RvcnMgaGVs
-ZCBpdHMgZmlyc3QgbWVldGluZyBvbiBOb3ZlbWJlciAxMCwgMjAxOS4KCi4uIHNl
-Y3RudW06OgoKQXR0ZW5kYW5jZQoqKioqKioqKioqKioqKioqKioqKioqKioqKioq
-KioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq
-KioqKgoKVGhlIGZvbGxvd2luZyBtZW1iZXJzIG9mIHRoZSBCb2FyZCBvZiBEaXJl
-Y3RvcnMgKDIgb2YgMikgd2VyZSBwcmVzZW50IGF0IHRoZQptZWV0aW5nOgoKMS4g
-VGhlTG9uZVRvcFdvbGZ4CjIuIE1DU1Blbmd1aW4KCk5vIGRpcmVjdG9ycyB3ZXJl
-IGFic2VudC4KCkEgcXVvcnVtIG9mIGRpcmVjdG9ycyB3YXMgcHJlc2VudC4KCk5l
-dyBCdXNpbmVzcwoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq
-KioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKgoKT24g
-bW90aW9uIGFuZCBieSB1bmFuaW1vdXMgdm90ZSwgVGhlTG9uZVRvcFdvbGZ4IHdh
-cyBlbGVjdGVkIHRlbXBvcmFyeQpTZWNyZXRhcnkuCgpSRVNPTFZFRCwgdGhhdCB0
-aGUgQnlsYXdzIGhvc3RlZCBhdCBodHRwczovL3Bhc3RlYmluLmNvbS/pcmF3L0pq
-blZUUHNQIGFyZQpoZXJlYnkgYWRvcHRlZCBhcyB0aGUgQnlsYXdzIG9mIHRoZSBD
-b3Jwb3JhdGlvbi4KClJFU09MVkVEIEZVUlRIRVIsIHRoYXQgTUNTUGVuZ3VpbiBz
-aGFsbCBiZSB0aGUgUHJlc2lkZW50IG9mIHRoZSBDb3Jwb3JhdGlvbi4KClJFU09M
-VkVEIEZVUlRIRVIsIHRoYXQgVGhlTG9uZVRvcFdvbGZ4IHNoYWxsIGJlIHRoZSBT
-ZWNyZXRhcnkgb2YgdGhlCkNvcnBvcmF0aW9uIGFuZCB0aGUgVHJlYXN1cmVyIG9m
-IHRoZSBDb3Jwb3JhdGlvbi4KClJFU09MVkVEIEZVUlRIRVIsIHRoYXQgdGhlIG51
-bWJlciBvZiBCb2FyZCBvZiBEaXJlY3RvcnMgc2hhbGwgYmUgaW5jcmVhc2VkIGZy
-b20KMiB0byAzLgoKUkVTT0xWRUQgRlVSVEhFUiwgdGhhdCBDb252b3kgKGEuay5h
-LiBQbGF5ZXIpIHNoYWxsIGJlY29tZSBhIERpcmVjdG9yIG9mIHRoZQpDb3Jwb3Jh
-dGlvbi4KCkFkam91cm5tZW50CioqKioqKioqKioqKioqKioqKioqKioqKioqKioq
-KioqKioqKioqKioqKioqKioqKioqKioqKirnKioqKioqKioqKioqKioqKioqKioq
-KioqKgoKVGhlcmUgYmVpbmcgbm8gZnVydGhlciBidXNpbmVzcywgdGhlIG1lZXRp
-bmcgd2FzIGFkam91cm5lZCBhdCAxOTowNSBQU1QuCgpOb3ZlbWJlciAxMCwgMjAx
-OQoKVGhlTG9uZVTkb3BXb2xmeApTZWNyZXRhcuB5AMLBXAQAAQoAEAUCXcnsfQkQ
-08Eq7Qdjre8AAEzZEACE0Fhegw9Djv2/IiSEogMdwQPY4B9xKfnfxDDBqy6UBI+j
-R3QqhR7v3z1g6Y3VlVpmG4FO7aQbtmbNmH3LNbbithxisRM0paOzR/SsB7wdKgxn
-vrYMrWmjIwSorTsqqChKGUOFXFGqvZvR2BhzVimWeLoobYVuol68DcBw6YX6O6j3
-mpeEz/Qjqu8A3T21agD28wTAdC8j7ZrkhijPBxcwpcQK80m4vakMnZDUvt2YcEJy
-nKs62sRYBMbkwn9KlGnRZSBMW8XGuF+ViIWKGmydI6vMpMUYGEmaWbehfCXbNlOt
-ifDsZMCCPj/C5gR2pbSxLPdd3Ofrg3YIDmIboX14eCw9qecrzNdO17/DzGgSiDpe
-/SGYW0pAXwfVq3ngFchaG0b2U72cz0lrPvE/ar1rMWzdowayTc5SIZLRS/EAiTm4
-PMhR8pVkTvs/Uw2WpH3HttsdP0OcZTDI7EIIS53+3WYFkIzMSfp70R+hpZp+K217
-9XSO0mPJeEE1bPG/P3AoNryL2zHAGgWLc7Iz57dWuSOxEV2MI1qIOrNvq6T+k9MS
-JqX7rrG9g/w+WSXLa8RHKQQHZw8X9XLWkZdDPVw8j3u80jUjUbqN8M4xQVFhap79
-KNMPo72j+LW93hyBZHG/e8bFGfwxJxY0TlibYHwrKCiJ3LiGJJlUD1tgeOgfrw==
-=WbQL
------END PGP MESSAGE-----
-  </pre>
-  <h3>Verify signatures with Keybase</h3>
-  <p>To verify a signature, go <a href="https://keybase.io/verify">https://keybase.io/verify</a> and paste in the signature you want to verify.</p>
-  <p>For example, try verifying the signatures above. You should see a copy of the contract and the name of person who signed it.</p>
-  <h3>Identity proofs</h3>
-  <p>How do we know that a username on Keybase actually is a person in-game, and not an impostor?</p>
-  <p>For example, how do we know "thelonetopwolfx" is "TheLoneTopWolfx" on CivRealms and that "TheLoneTopWolfx" is "thelonetopwolfx" on Keybase? The most certain solution involves two steps:</p>
-  <ol>
-    <li>Have "thelonetopwolfx" on Keybase sign a message saying "I am TheLoneTopWolfx on CivRealms."</li>
-    <li>Have "TheLoneTopWolfx" in CivRealms sign a book (using a Book and Quill) saying "I am thelonetopwolfx on Keybase.", and have him distribute copies to interested parties as necessary.</li>
-  </ol>
-  <p>Since neither of these can be forged, these two actions prove that the same person controls both accounts.</p>
-</body>
+.gallery img {
+    max-width: auto;
+}
+        </style>
+    </head>
+    <body>
+        <center><h1>CivCorp FAQ</h1></center>
+        <div class="content">
+            <h2>What is CivCorp?</h2>
+            <p><strong>CivCorp</strong> is a private corporation, founded by TheLoneTopWolfx and MCSPenguin, that operates CivCorp City and uses its capital to facilitate trade on the server.</p>
+            <p>Join the <a href="https://discord.gg/T9vTE46">CivCorp Discord</a> for more information.</p>
+            <h2>What is CivCorp City?</h2>
+            <p><strong>CivCorp City</strong> is a trade-oriented city being built and operated by CivCorp. It aims to become the server’s de facto trade hub and one-stop shop. You can view a map of the city <a href="https://civcorp.github.io/map">here</a>.</p>
+            <h2>Where is CivCorp City located?</h2>
+            <p>CivCorp City is located centrally at <strong>4500, -5300</strong>, just northeast of Olendor (Varathia) and 3 minutes southeast of Wheaton (Wheatistan). CivCorp City is linked by rail to Olendor (1:20m), Alexandria (7:20m), Amaryllis, ICOR, and will soon be connected to Carbon and Wheaton. The entrance to Carbon’s horse tunnel is also less than 3 minutes away.</p>
+            <a href="https://i.imgur.com/jfKjrk7.jpg"><img src="https://i.imgur.com/jfKjrk7.jpg"/></a>
+            <h2>What is the CivCorp Shop?</h2>
+            <p>The <strong>CivCorp Shop</strong> is the largest shop on the server. It contains three shops within it: the CivCorp General Store, the XP Exchange, and the Diamond Exchange.</p>
+            <div class="gallery">
+                <img src="https://i.imgur.com/jPtdlWs.png">
+                <img src="https://i.imgur.com/341MNM1.png">
+                <img src="https://i.imgur.com/cZA2UTI.png">
+                <img src="https://i.imgur.com/yltdPDR.png">
+            </div>
+            <div>
+                <h3>CivCorp General Store</h3>
+                <p>The <strong>CivCorp General Store</strong> sells tools, armor, snitches, bastions, building materials, and other assorted goods at competitive prices.</p>
+            </div>
+            <div>
+                <h3>XP Exchange</h3>
+                <p>The <strong>XP Exchange</strong> allows you to trade XP materials (Wheat, Potato, Beetroot, Carrot, Netherwart, Cocoa Beans, and Glass Bottles) for XP Bottles, and XP Bottles back for XP materials, in bulk and at fair market prices which automatically adjust over time.</p>
+                <p>If you're a farmer, we think the XP Exchange will be useful to you because:</p>
+                <ul>
+                    <li>You can instantly turn your crops into XP without doing any work to find a buyer or negotiate prices, and you will receive fair market prices in doing so.</li>
+                    <li>If you don’t have access to an XP3 Factory, you will get more XP by selling your crops to the Exchange than you would by running them through XP1 or XP2 recipes.</li>
+                </ul>
+                <p>If you’re an XP producer, we think the XP Exchange will be useful to you because:</p>
+                <ul>
+                    <li>You can instantly purchase whichever XP materials are a bottleneck in your production process. The exchange sells crops 5 compacted items at a time, which is perfect for doing a single uncompacted XP3 run, and also convenient for compacted XP3 runs.</li>
+                    <li>You can sell off excess of your more abundant XP materials at market prices.</li>
+                    <li>You may find opportunities to profit off of the exchange by buying all 7 ingredients, crafting them into XP, and ending up with more XP than you paid for the materials.</li>
+                </ul>
+                <p>If you’re a trader or courier, we think the XP exchange will be useful to you because:</p>
+                <ul>
+                    <li>You can check the Exchange for market prices.</li>
+                    <li>You may be able to coordinate a deal where you buy crops from one person and sell it to the Exchange for a profit.</li>
+                </ul>
+                <h4>Trading</h4>
+                <p>The exchange trades in units of 5 compacted items (or stacks) of crops at a time. A public compactor is available inside the shop free of charge, with Crates available for purchase, or you can use your compactor at home.</p>
+                <p>The total initial stock of the exchange comprises over 15,000 XP Bottles, and dozens of double chests of XP materials.</p>
+                <p>For each crop, there are 16 chests trading items at 8 prices. For each price, we stocked the exchange with 600 XP Bottles or 600 XP Bottles worth of materials. The current price will depend on supply and demand. As people buy more items from the exchange, the price will increase, and as people sell more items to the exchange, the price will decrease.</p>
+                <p>The opening buy and sell prices are below.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Buy Price</th>
+                            <th>Sell Price</th>
+                            <th>Available Buy Quantity</th>
+                            <th>Available Sell Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>5 Compacted Items of Wheat</td>
+                            <td>12</td>
+                            <td>18</td>
+                            <td>250 Compacted Items</td>
+                            <td>130 Compacted Items</td>
+                        </tr>
+                        <tr>
+                            <td>5 Compacted Items of Potato</td>
+                            <td>30</td>
+                            <td>42</td>
+                            <td>100 Compacted Items</td>
+                            <td>55 Compacted Items</td>
+                        </tr>
+                        <tr>
+                            <td>5 Compacted Items of Carrot</td>
+                            <td>35</td>
+                            <td>48</td>
+                            <td>85 Compacted Items</td>
+                            <td>50 Compacted Items</td>
+                        </tr>
+                        <tr>
+                            <td>5 Compacted Items of Beet</td>
+                            <td>40</td>
+                            <td>54</td>
+                            <td>75 Compacted Items</td>
+                            <td>40 Compacted Items</td>
+                        </tr>
+                        <tr>
+                            <td>5 Compacted Items of Netherwart</td>
+                            <td>45</td>
+                            <td>66</td>
+                            <td>65 Compacted Items</td>
+                            <td>35 Compacted Items</td>
+                        </tr>
+                        <tr>
+                            <td>5 Compacted Items of Cocoa Beans</td>
+                            <td>65</td>
+                            <td>90</td>
+                            <td>45 Compacted Items</td>
+                            <td>25 Compacted Items</td>
+                        </tr>
+                        <tr>
+                            <td>5 Compacted Items of Glass Bottle</td>
+                            <td>55</td>
+                            <td>78</td>
+                            <td>50 Compacted Items</td>
+                            <td>30 Compacted Items</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>For example, this means that right now you can sell up to 250 compacted items of Wheat, and for every 5 compacted items you sell, you will receive 12 XP Bottles. After selling 250 compacted items, you can continue to sell Wheat, but the price will be reduced to 10 XP Bottles per exchange.</p>
+                <p>We trade in units of 5 compacted items (or stacks) for a few reasons:</p>
+                <ul>
+                    <li>5 stacks of each ingredient is enough to run the uncompacted XP Level 3 recipe once.</li>
+                    <li>Compacted items are easier to transport and can easily be run through the compacted XP recipe.</li>
+                    <li>You can easily determine the value of a single stack by dividing the price by 5, and you can easily determine the rough value of a double chest by multiplying by 10. For example, if the XP Exchange's market price for Beetroot is 40 XP bottles, then that means a single stack of Beetroot is worth 8 XP Bottles, and a double chest of Beetroot (54 stacks) is worth a little over 400 XP bottles.</li>
+                </ul>
+                <p>Prices at the exchange are and will be the most fair prices on the server. This is for the simple reason that if prices were too high, farmers or speculators would be motivated to sell crops to the exchange, thus lowering the price, and if prices were too low, XP producers or speculators would be motivated to buy crops from the exchange, thus raising the price. If you ever visit the exchange and find that the prices don’t seem fair to you, then that means there is an opportunity to profit by either buying from or selling to the exchange. If you think the price is too low, you stand to make money by buying. If you think the price is too high, you stand to make money by selling.</p>
+                <p>Because prices respond to supply and demand, there should always be availability of whatever item you are looking for, though it may be at a different price than you would like. It is virtually impossible to visit the Exchange and find it out of stock.</p>
+            </div>
+            <div>
+                <h3>Diamond Exchange</h3>
+                <p>The <strong>Diamond Exchange</strong> allows you to trade Diamonds for Stamina, and Stamina for Diamonds, in bulk and at fair market prices which automatically adjust over time.</p>
+                <img src="https://i.imgur.com/Y8dNvWk.png">
+                <p>The total initial stock of the Diamond Exchange includes over 500 Diamonds and over 200 Stamina, to enable bulk trade and stable prices.</p>
+                <p>The Diamond Exchange is housed on the first floor of The CivCorp Shop.</p>
+                <ul>
+                    <li>If you're a new player trying to build a Stamina reserve, the Diamond Exchange will help make sure you get the most out of the Diamonds you mine.</li>
+                    <li>If you're an established player trying to repair an expensive factory or come up with Stamina for a trade deal, the Diamond Exchange will allow you to convert diamonds into Stamina in bulk and at fair market rates.</li>
+                    <li>If you're a Mithril producer, or if you need Diamonds for reinforcements, the Diamond Exchange will allow you to immediately buy large quantities of Diamonds at fair market rates.</li>
+                    <li>If you're a trader, the Diamond Exchange will help determine a rate to convert between Diamonds and Stamina. If you prefer to take payment in one form or the other, either you or your trading partner can use the Diamond Exchange to achieve that.</li>
+                </ul>
+                <p>The Diamond Exchange trades in units of 2 Stamina at a time. It has 32 chests trading at 8 different prices. At each price, you can buy or sell at least 2 stacks of Diamonds before the price changes. The current market price will depend on supply and demand. As people buy more Diamonds from the exchange, the price will increase, and as people sell more Diamonds to the exchange, the price will decrease.</p>
+            </div>
+            <h2>How do you get a plot in CivCorp City?</h2>
+            <p>The city is subdivided into 64 plots which cost money to purchase.</p>
+            <div class="gallery">
+                <img src="https://i.imgur.com/6aMiA6V.png">
+                <img src="https://imgur.com/33BhLi7.jpg">
+            </div>
+            <p>There are two ways to get a plot in the city:</p>
+            <ol>
+                <li>Buy an empty plot for 20 Stamina.</li>
+                <li>Make a buyout-offer for a claimed plot. To make a buy-out offer, talk to an officer of CivCorp.</li>
+            </ol>
+            <p>To see a map of the claimed and unclaimed plots, <a href="https://civcorp.github.io/map">click here</a>.</p>
+            <p>In addition to the purchase price, you must also pay monthly dues on your plot equal to 1/16 of the value of your plot.</p>
+            <h2>What can I do with my plot?</h2>
+            <p>By buying a plot, you agree to the <a href="https://github.com/CivCorp/Legal/blob/master/PlotOwnershipAgreement.md">Plot Ownership Agreement</a>. The agreement allows you to do anything with your plot except store pearls or build anything that would be reasonably considered a hazard (e.g. traps) or a nuisance (e.g. lag machines or hate symbols).</p>
+            <h2>How big are plots?</h2>
+            <p>Central plots are 21x21. Edge plots are 21x19. Corner plots are 19x19. Plots extend from bedrock to sky limit.</p>
+            <h2>Why buy a plot in CivCorp City?</h2>
+            <h3>CivCorp is going to invest heavily in the city</h3>
+            <p>CivCorp, the corporation that manages CivCorp City, only makes money if we improve the value of plots in our city, so we’re strongly incentivized to invest in making the city a desirable place to live and trade. Some highlights:</p>
+            <ol>
+                <li>A flat grid-based layout facilitates easy navigation and plot labeling.</li>
+                <li>The single largest shop and exchange on the server in the center of our city (Plot E5)</li>
+                <li>A stamina-backed currency to enable fine-grained trade, with the bank in Plot E4.</li>
+                <li>Aqua Nether Portal just 90 seconds away by rail.</li>
+                <li>A fully-featured factory room in the center of the city (E5) with Blast Furnace, Advanced Experience Factory, Mithril Tools, Mithril Armor, available for a monthly subscription fee.</li>
+                <li>Trench and wall around the city, with guaranteed bounties on any raiders.</li>
+                <li>Planned rail lines will connect the city to all major metros.</li>
+                <li>A shopchest inventory tracking system will let customers see what’s in stock before visiting, and allows shopkeepers to see when it’s time to restock without visiting first.</li>
+                <li>Integration with CivMall (civmall.ml) will allow producers to sell their goods online, and buyers to have goods shipped to them. Pickups for anything bought on CivMall will be discounted for residents of the city.</li>
+            </ol>
+            <h3>Your neighbors will be productive</h3>
+            <p>Ever been frustrated by seeing a plot you didn't think was being used well? And when you offered to buy it, you got rejected? CivCorp City is structured to never allow that to happen. The city will stay dense and avoid sprawl, keeping shops and services close together.</p>
+            <p>CivCorp charges monthly dues on its plots, designed to encourage its members to put their plots to their most productive use. These dues will increase over time as the demand for and value of plots increases, so people who don’t use their plots productively will be pushed to relocate to less valuable locations, and people who do want to use their plots productively will have access to the best plots. Monthly dues start at just 1/16th of the purchase price of the plot, so if you buy a plot for 20 Stamina, dues will be just over 1 Stamina per month.</p>
+            <p>Any increase in dues comes with a corresponding buyout offer; if dues increase by 50%, you can instead sell your plot back to us for 50% more than you paid. (For fans of economics, our policies were heavily influenced by Milton Friedman and Henry George.</p>
+            <p>If you want to live in a city where all of your neighbors are active power players utilizing their plots for useful shops or services, then you should buy a plot in CivCorp City.</p>
+            <h3>Plots are an investment</h3>
+            <p>CivCorp City plots are an investment. As the value of plots in the city improve over time, you will have the opportunity to sell your plot for more than you bought it, making this one of the few investable opportunities on the server. Also, no new plots will ever be created!</p>
+            <h3>Competent leadership</h3>
+            <p>CivCorp is operated by MCSPenguin, TheLoneTopWolfx, and Convoy, some of the most experienced traders on any civ server.</p>
+            <ul>
+                <li>MCSPenguin, also known as EliteTurtle, opened the Nether Emporium in Olendor and the Purple Shop in Alexandria, and has become one of the most active traders on the server. He likes to design efficient usable spaces and has been terraforming and laying out the city. In real life, he is a software engineer in his mid-twenties.</li>
+                <li>TheLoneTopWolfx is a long-time trader on Civ servers, dating back to Devoted 2.0. He spends much of his time thinking about how to build new types of shops and how to make shops more secure (with explanations at <a href="https://www.reddit.com/r/civeconomics/">/r/civeconomics</a>). He built the Civ Mercantile Exchange (CME) in Mt. Augusta, the largest shop on CivClassics. In real life, he is a software engineer in his late-twenties.</li>
+                <li>Convoy is the richest player on the server, de facto warden of the server, and owner of the server’s only serious pearl vault.</li>
+            </ul>
+            <p>CivCorp leadership is organized as a corporation. The current CEO is MCSPenguin, and the Board of Directors consists of MCSPenguin, TheLoneTopWolfx, and Convoy.</li>
+        </div>
+    </body>
+</html>
