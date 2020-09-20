@@ -1,9 +1,20 @@
 body {
+  background-image: linear-gradient(to bottom, #20628a 0%, #112B4A 15%);
+  color: rgba(255, 255, 255, 0.87);
+  font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
   margin: 0;
 }
 
 img {
   max-width: 100%;
+}
+
+a {
+color: #03DAC5;
+}
+
+a:visited {
+color: #018786;
 }
 
 .banner {
@@ -38,12 +49,22 @@ img {
   max-width: 50%;
 }
 
+.hero {
+    position: relative;
+}
+
+.hero .caption {
+    bottom: 0;
+    left: 1em;
+    position: absolute;
+}
+
 .navbar {
     background: #6c757d;
     padding: .5rem 1rem;
 }
 
-.navbar a {
+.navbar a, a:visited {
     color: white;
     text-decoration: none;
 }
@@ -80,19 +101,4 @@ img {
 #total-cost {
   position: relative;
   left: -20px;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #121212;
-    color: rgba(255, 255, 255, 0.87);
-  }
-
-  a:link {
-    color: #03DAC5;
-  }
-
-  a:visited {
-    color: #018786;
-  }
 }
