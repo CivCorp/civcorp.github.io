@@ -51,6 +51,7 @@ color: #018786;
 
 .hero {
     position: relative;
+    width: 100%;
 }
 
 .hero .caption {
