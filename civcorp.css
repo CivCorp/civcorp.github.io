@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.banner {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  color: white;
+  background: rgb(90, 104, 116);
+}
+
+.content {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.caption {
+  font-size: 0.875em;
+  font-style: italic;
+  margin: 0;
+  line-height: 1.5em;
+}
+
+.figure {
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  max-width: 50%;
+}
+
+.navbar {
+    background: #6c757d;
+    padding: .5rem 1rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+}
+
+.nav-item {
+}
+
+.nav-link {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+#factory-club ol {
+  column-count: 2;
+}
+
+#prices .gallery {
+  position: relative;
+  left: -200px;
+  width: 1200px;
+}
+      
+#total-cost {
+  position: relative;
+  left: -20px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: rgba(255, 255, 255, 0.87);
+  }
+
+  a:link {
+    color: #03DAC5;
+  }
+
+  a:visited {
+    color: #018786;
+  }
+}
