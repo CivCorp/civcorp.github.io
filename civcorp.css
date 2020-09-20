@@ -57,6 +57,12 @@ color: #018786;
     position: relative;
 }
 
+.hero-unit {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .hero img {
     z-index: -1;
 }
