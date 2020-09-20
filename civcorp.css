@@ -3,10 +3,15 @@ body {
   color: rgba(255, 255, 255, 0.87);
   font-family: "Whitney",Helvetica Neue,Helvetica,Arial,sans-serif;
   margin: 0;
+  margin-bottom: 2em;
 }
 
 img {
   max-width: 100%;
+}
+
+img.rounded {
+    border-radius: 50%;
 }
 
 a {
@@ -62,6 +67,11 @@ color: #018786;
     display: grid;
     gap: 1em;
     grid-template-columns: 1fr 1fr;
+    margin: 2em 0;
+}
+
+.hero-unit img {
+    margin: 0 auto;
 }
 
 .hero img {
