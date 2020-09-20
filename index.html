@@ -1,6 +1,5 @@
 <html>
   <head>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155995811-1"></script>
@@ -12,74 +11,24 @@
       gtag('config', 'UA-155995811-1');
     </script>
     <title>CivCorp FAQ</title>
-    <style>
-img {
-  max-width: 100%;
-}
-
-.banner {
-  text-align: center;
-}
-
-.content {
-  margin: 0 auto;
-  width: 800px;
-}
-
-.caption {
-  font-size: 0.875em;
-  font-style: italic;
-  margin: 0;
-  line-height: 1.5em;
-}
-
-.figure {
-  text-align: center;
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.gallery img {
-  max-width: 50%;
-}
-
-#factory-club ol {
-  column-count: 2;
-}
-
-#prices .gallery {
-  position: relative;
-  left: -200px;
-  width: 1200px;
-}
-      
-#total-cost {
-  position: relative;
-  left: -20px;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #121212;
-    color: rgba(255, 255, 255, 0.87);
-  }
-
-  a:link {
-    color: #03DAC5;
-  }
-
-  a:visited {
-    color: #018786;
-  }
-}
-    </style>
+    <link href="civcorp.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div class="banner">
         There are <span data-playercounter-ip="CivRealms.com">0</span> players on CivRealms right now.
+    </div>
+    <div class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="exchange">Exchange Charts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="map">Plot Map</a>
+            </li>
+        </div>
     </div>
     <center><h1>CivCorp FAQ</h1></center>
     <div class="content">
@@ -213,21 +162,6 @@ img {
         </ul>
         <p>Prices at the exchange are and will be the most fair prices on the server. This is for the simple reason that if prices were too high, farmers or speculators would be motivated to sell crops to the exchange, thus lowering the price, and if prices were too low, XP producers or speculators would be motivated to buy crops from the exchange, thus raising the price. If you ever visit the exchange and find that the prices don’t seem fair to you, then that means there is an opportunity to profit by either buying from or selling to the exchange. If you think the price is too low, you stand to make money by buying. If you think the price is too high, you stand to make money by selling.</p>
         <p>Because prices respond to supply and demand, there should always be availability of whatever item you are looking for, though it may be at a different price than you would like. It is virtually impossible to visit the Exchange and find it out of stock.</p>
-      </div>
-      <div id="prices">
-        <h4>Market Depth Charts</h4>
-        <p>The following charts show the price and quantity available for each item. Charts may be out-of-date. To get notified when the charts are updated, join our <a href="https://discord.gg/T9vTE46">Discord</a>.</p>
-        <p class="figure" id="total-cost"><iframe width="1023.3559498956158" height="632.5" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSATtzy4a_Jj2QCWDtNsBX_pdLjKqB9D0YanyoyoiW7whXgy9jc2gsDGAbbXXWcUOABxvCdnFWu6xro/pubchart?oid=796603054&amp;format=interactive"></iframe></p>
-        <p class="figure"><iframe width="999.5" height="618.0175083333334" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSATtzy4a_Jj2QCWDtNsBX_pdLjKqB9D0YanyoyoiW7whXgy9jc2gsDGAbbXXWcUOABxvCdnFWu6xro/pubchart?oid=820289215&amp;format=interactive"></iframe><p>
-        <div class="gallery">
-          <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSATtzy4a_Jj2QCWDtNsBX_pdLjKqB9D0YanyoyoiW7whXgy9jc2gsDGAbbXXWcUOABxvCdnFWu6xro/pubchart?oid=1334001356&amp;format=interactive"></iframe>
-          <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSATtzy4a_Jj2QCWDtNsBX_pdLjKqB9D0YanyoyoiW7whXgy9jc2gsDGAbbXXWcUOABxvCdnFWu6xro/pubchart?oid=355100242&amp;format=interactive"></iframe>
-          <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSATtzy4a_Jj2QCWDtNsBX_pdLjKqB9D0YanyoyoiW7whXgy9jc2gsDGAbbXXWcUOABxvCdnFWu6xro/pubchart?oid=1382538345&amp;format=interactive"></iframe>
-          <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSATtzy4a_Jj2QCWDtNsBX_pdLjKqB9D0YanyoyoiW7whXgy9jc2gsDGAbbXXWcUOABxvCdnFWu6xro/pubchart?oid=1174995083&amp;format=interactive"></iframe>
-          <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSATtzy4a_Jj2QCWDtNsBX_pdLjKqB9D0YanyoyoiW7whXgy9jc2gsDGAbbXXWcUOABxvCdnFWu6xro/pubchart?oid=1933099658&amp;format=interactive"></iframe>
-          <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSATtzy4a_Jj2QCWDtNsBX_pdLjKqB9D0YanyoyoiW7whXgy9jc2gsDGAbbXXWcUOABxvCdnFWu6xro/pubchart?oid=236185577&amp;format=interactive"></iframe>
-          <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSATtzy4a_Jj2QCWDtNsBX_pdLjKqB9D0YanyoyoiW7whXgy9jc2gsDGAbbXXWcUOABxvCdnFWu6xro/pubchart?oid=308814414&amp;format=interactive"></iframe>
-        </div>
       </div>
       <div>
         <h3>Diamond Exchange</h3>
