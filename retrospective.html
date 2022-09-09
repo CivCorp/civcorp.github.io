@@ -1,0 +1,161 @@
+<html>
+  <head>
+    <title>CivCorp - Retrospective</title>
+    <meta name="description" content="CivCorp is a virtual corporation in CivRealms.">
+    <link href="retrospective.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <section>
+        <h1>CivCorp Retrospective</h1>
+        <p>by Ceasar Bautista, Lewis Ellis</p>
+        <p>CivCorp was a corporate city state.</p>
+    </section>
+    <section id="section-background">
+        <div class="content-wrapper">
+            <h1>Background</h1>
+            <p>CivRealms is one server in a long history of servers belonging to a subgenre of Minecraft anarchy servers called "Civ". The first was "AncapMinecraft" created by a player named ttk2 in 2011. ttk2 went on to create three more Civ servers, CivCraft 1.0 in 2012, CivCraft 2.0 in 2013, and CivCraft 3.0 in 2016, which largely defined the genre. However Civ 3.0 shut down a few months after launch due to poor reception, and ttk quit, leaving a gap in the community. A player named TealNerd filled the gap with a server named CivClassics, which was similar to CivCraft 2.0. CivClassics was active for a long time, but activity began to dwindle when the two dominant power groups reached a stalemate. CivRealms began in May 2019.</p>
+            <p>Civ servers play like regular Minecraft, and each have their own unique mechanics, but they share a few mechanics in common:</p>
+            <ul>
+                <li>Little to no admin intervention. Players are expected to police themselves, and the world never resets. There is a spirit of experimentation.</li>
+                <li>The server runs a virtual world which remains up 24 hours a day. Other players can interact with the world while you are disconnected.</li>
+                <li>Players can indefinitely ban other players from the server by killing them with a special item called a <em>prison pearl</em>.</li>
+                <li>Players can make blocks time-consuming to destroy using special items called <em>reinforcements</em>. This makes private property possible, as a players can reinforce chests containing items and the walls of their homes.</li>
+                <li>The server is a sandbox game. There is no way to win. Players come up with their own goals.</li>
+            </ul>
+        </div>
+    </section>
+    <section id="section-design">
+        <div class="content-wrapper">
+            <h1>Starting a city from scratch</h1>
+            <p>How do you design a city?</p>
+            <p>We designed CivCorp based on several observation about other cities:</p>
+            <ol>
+                <li>Most cities use their land poorly and become ghost cities over time. After an initial wave of excitement, city residents would go inactive and their land would sit unused. Since the founding players often took the most central and valuable land, players who joined late would have to find land on the outskirts, which creates urban sprawl.</li>
+                <li>Cities do not have to be big. We want to maximize the number of "places".</li>
+                <li>Most players do not want to be told what to do, and it's hard to compel them to do things anyway. Most cities rely on volunteers and lack revenue because taxation is unpopular.</li>
+                <li>Cities experience network effects because of positive externalities (when the donut shop opens up next to the cafe, both win).</li>
+                <li>Cities experience agglomeration (people want to live in large groups of people). When there are many people in close proximity, transaction costs for many activities shrink, investing in good shops makes more sense, and some new business that require critical mass become possible.</li>
+                <li>Most governments are run by incompetent people. They often tend to be cliquish. Democracies in particular gives stupid people too much influence. The effectiveness of organizations depends on their degree of unity.</li>
+                <li>We want to give people influence in government in proportion to how much they contribute to the group. Many groups have Discord/Reddit warriors who never actually play or contribute but neverthless are extremely vocal and stir drama. The best way to measure contribution is through money. This also has the side nice side effect of being an attractive proposition to power players. Plutocracy seemed like a better form of governance.</p>
+            </ol>
+            <p>A corporation is the most effective way to align the interests of many people, because people have financial ties in addition to idealistic ones.</p>
+            <p>Network effect of: (active) players, places (shops, entertainment), government.</p>
+            <h2>Security</h2>
+            <p>The primary role of the state is to protect its citizens and their property.</p>
+            <p>We did this in a variety of ways:</p>
+            <ul>
+                <li>We established access control by building a wall and trench around the city. Players could access the city through gates on each side of the city only if they were whitelisted. If a non-whitelisted player somehow managed to enter the city, special blocks known as "snitches" would notify whitelisted players of the trespasser. We offered a bounty to anyone who would remove them.</p>
+                <li>We very publicly blacklisted and bountied players who harmed players or damaged property in the city, and offered generous compensation to victims.</li>
+                <li>We publicly took a position of isolationism, while establishing goodwill with power players on the server.</li>
+                <li>We reserved the power to blacklist players and groups from the city, which would make it more difficult for them to participate in the economy.</li>
+                <li>We maintained a massive war chest in case we needed to go to war.</li>
+            </ul>
+            <h2>Economy</h2>
+            <h3>The Exchange</h3>
+            <p>eliminating barter</p>
+            <p>market making</p>
+            <p>manufacturing center/commodity colonies model ("Factorio base", USA)</p>
+            <p>coordinated economy of server as invisible hand</p>
+            <p>trade with us or get fucked because your economy will grow slower than your enemies</p>
+            <p>value of Wall Street is ensuring prices reflect all available information</p>
+            <p>controlling supply chain bottlenecks</p>
+            <h3>Land Value Tax</h3>
+            <p>We knew the Exchange would generate a large amount of value for the land around it, so we wanted to capture that value for ourselves, while also promoting growth.</p>
+            <h2>Justice</h2>
+            <p>As a voluntary city, we wanted to encourage private contracts.</p>
+            <p>We originally tried to use digital signatures.</p>
+            <h2>Urban planning</h2>
+            <p>We made a mistake by laying out plots like a chess grid. We should have laid them out in streets to make so that each plot has a clear front.</p>
+            <p>CivCorp Tower (architecture is design of space not buildings, so let people design spaces (cubes); Habbo Hotel-style hyperlinked rooms; cities don’t actually need much space, all production/trading could fit in a single plot, so ownership of space is mostly status driven or a way to park wealth)</p>
+        </div>
+    </section>
+    <section id="section-capitalism">
+        <div class="content-wrapper">
+            <h1>Capitalism</h1>
+            <h2>The genius of capitalism</h2>
+            <p>Consider you have an opportunity to redesign the rules of your country's economy from scratch. Your nation has a certain amount of land, a certain amount of resources, and a certain amount of people. And your country is surrounded by unfriendly neighbors who are trying to grow faster than you. What's the best way to organize your nation's economy to most quickly grow the total amount of wealth?</p>
+            <p>This is the central question of economics, and also where economics gets its name: economists study how to put limited resources to their most economical use. And the answer to this question, especially in a gaming context, is apolitical: we're only interested in the right answer, because we have competition.</p>
+            <p>In general, for a country, we probably want to accomplish the following goals:</p>
+            <ul>
+                <li><strong>We want to put resources in the hands of people who value them the most.</strong></li>
+                <li><strong>We want people to work on the things that balance what they're good at and what society needs.</strong></li>
+                <li><strong>We want to invest excess resources into the projects that will generate the most resources in the future.</strong></li>
+                <li><strong>We want everyone to feel satisfied with their situation so that they continue to work.</strong></li>
+            </ul>
+            <p>The best way to do this is to organize your economy as a market economy: create markets for everything, and then let people freely pursue their own self-interest. Prices will simultaneously reflect what the group needs most and motivate people to produce those things.</p>
+            <p>We saw this repeatedly happen in our world. For instance, there was a brief time when the price of carrots was high, and everyone raced to find ways to produce more carrots (i.e. expanding their carrot farms) hoping to cash in before others did. This drove the price of carrots down, until something else became more valuable to produce. And then of course the cycle began all over. Each time we went through the cycle though, farms got a little bit bigger and farming techniques got a little more clever, so that within a few months the server had massive farms for all the crops in proportion to how much each crop was needed. In fact, growth happened so fast that we actually ended up destroying the economy because it quickly reached a point of post-scarcity.</p>
+            <p>This example is the very essence of capitalism. Each time we go through the cycle of solving shortages we invest surplus resources to expand our total capacity to produce (i.e. create capital), and market prices ensure we are always on the most efficient path of expanding production (i.e. prices act as a priority system, motivating the group to work on solving bottlenecks).</p>
+            <p>The process can be made more efficient by establishing additional institutions. For example, banks create markets for debt, essentially enabling people with modest savings, who would otherwise hoard their wealth, to pool their wealth together and lend it to people who have big ideas for expanding production. Stock markets function similarly by creating markets for equity, which is useful for riskier ideas. An efficient legal system glues it all together.</p>
+            <p>Using markets to coordinate production is not an obvious idea. Many people believe that the price of things reflects the labor it requires to produce; so if it takes an hour to catch 10 fish or gather 2 coconuts, then 1 coconut is worth 5 fish. But that completely misses the demand side of the equation; maybe people really want coconuts because they already have too much fish! You can see how absurd it is if you replace "coconuts" with "hotdogs" and "fish" with "hotdog buns". Obviously, one or the other will be more valuable to produce depending on what's lacking. In a complex economy, the only way to know what's the most valuable thing to produce is to create markets.</p>
+            <p>It took until 1776, when Adam Smith published <em>A Wealth of Nations</em> to figure out that market economies, driven by supply and demand, were optimal. Even today many countries refuse to embrace capitalism, even as their geographical neighbors get rich. Just look at Japan, Singapore, South Korea, and Hong Kong (the "Asian Tigers") compared to the countries around them.</p>
+            <h2>How to get rich</h2>
+            <p>Competition is for losers. In competitive markets, nobody makes any money because everyone undercuts each other until they're out of business or just barely alive. Think about how little so many jobs pay or how slim the margins are for restaurants. You know you're in a competitive market when you're doing an enormous amount of work with little to show for it. Is it really a surprise America glorifies competition?</p>
+            <p>There is really only one way to get rich: monopoly. You don't want any competition. When there's no competition, you don't need to work very hard, and the money pours in. All of the great companies in history were monopolies, and all great entrepreneurs know this. We live in an age of monopoly capitalism.</p>
+            <p>So how do you create a monopoly? There are two important things. First, you have to make sure you can't be copied. Second, you have to be the first to see it because, by definition, monopolies can't be copied.</p>
+            <h3>Seeing things first</h3>
+            <p>You need to be able to see the future.</p>
+            <p>The best way to do this is to do what a good critic does: study history. If you can see the past and reasonably explain it, you can place current events into context, and make some good guesses about what the future will be.</p>
+            <p>People do this all the time with art they consume: books, music, movies, video games. They critique what they liked, what they didn't like, what changes they would make, how it compares to other things, how it fits into a bigger picture. They're practicing critical thinking.</p>
+            <p>Often times new things aren't really new. Consider the iPhone or Instagram. Technologically, Instagram had been feasible for a long time. It's just a website that shows some pictures. Snapchat similarly, was nothing technically brilliant, but was a critical response to Facebook's position on privacy. KPCB is famous for asking entrepreneurs "Why now?" reflecting that most innovation is just recognizing what's changed.</p>
+            <p>It's hard to see the future. But the bright side is that the world is constantly changing, so there are always new opportunities being created. Also, there is more capital than good ideas.</p>
+            <p>developing a thesis (why CivCorp?)/identifying the most important problems (Hamming question), separating time from ability to create value (e.g. trading, scalable things), 1% create all of the wealth). Being a laborer sucks (of all the value you create, after company, taxes, rent, you’re left with very little). Is time working for you or against you?</p>
+            <p>But capitalism/badly designed rules creates opportunities for rent-seeking (virtual real estate).</p>
+            <h3>Building a moat</h3>
+            <p>Defensibility is the ability to prevent others from entering the market. If your idea isn't defensible, you may be able to make money for a short time before people catch up, but as soon as they do you'll be turned into a commodity. You have to build a moat. There are several tools for doing so.</p>
+            <p>The simplest defense is a high startup cost. If the return on investment from investing in a new entrant in the market is lower than what could be gained from investing elsewhere, then nobody will bother. This is the default case but also the least interesting because it limits how much you can make.</p>
+            <p>Companies which benefit from network effects are typical. Phone companies like AT&T, marketplaces like eBay, social networks like Facebook and Twitter, payment apps like Venmo, all take advantage of the fact that the more users in the network, the more valuable the network is to everyone in it, making it easier and easier to grow the network. Even HBO exploits network effects: many of us watched Game of Thrones because everyone else was watching.</p>
+            <p>Multi-sided marketplaces are a special case of network effects where two sets of people want to be connected to each other. Video game console are a classic example of a two-sided marketplace: developers want to make games for the console with the most players, and players want to own the console with the most games. Console makers cleverly invest heavily in exclusive launch titles and build hype to jump start the marketplace. They also sell consoles for below cost and make up for it with royalties on games. Microsoft is another example. They created a three-sided marketplace between users, app developers, and hardware companies, and sold their operating system which glued it all together. Of course they launched with killer applications like Microsoft Word and Microsoft Excel to kickstart the network.</p>
+            <p>Another way is to take advantage of economy of scale. Farming and manufacturing are always cheaper at scale. The effect is also seen when there are no distribution costs: software, video games, movies, and newspapers, for example, invest huge sums to produce extremely high quality content.</p>
+            <p>Another way is to have trade secrets or advanced technology.</p>
+            <p>Another way is to have exclusive rights. Classically there are patents and intellectual property. But also for example, having the best or only location to produce a certain resource (e.g. a crop, oil, a mine). You can rent out the right: grocery stores rent out shelf space on the aisle ends to food brands. Airports rent out space to a single cafe at each terminal, as well as renting out specific times for planes to take off and land on the runway. Nightclubs rent tables. A special case of this is authenticity: only Rolex can make a Rolex, only Warhol can make a Warhol, only Harvard can mint a Harvard grad.</p>
+            <p>An extension of exclusivity is branding.</p>
+            <p>You can also engage in anti-competitive practices such as predatory pricing, "extend, embrace, extinguish", scorched earth strategies.</p>
+            <h2>How rich people think</h2>
+            <p>How your thinking changes when you do get rich (rich people problems are what to do with all the money, where can it be invested) + Lack of things to invest in/bottleneck on ideas, why is it hard to come up with investable ideas. What is capital really? In real world, our economy has the same issue which is a good thing if you’re not rich- bottleneck is ideas not capital</p>
+            <h2>There are no sides in politics</h2>
+            <p>The liberal/conservative divide is in some ways exaggerated. In a game world, with competition, we're interested only in what works. It's realpolitik. Politicians view the world differently than citizens because they have to face the reality that politics is a zero-sum game where everyone is constantly vying for power and mistakes are existential threats. This naturally leads to more conservative viewpoints. Also because politics have been studied since the dawn of civilization, and there's nothing really new.</p>
+            <p>People are flexible with different forms of government. Authoritarianism is not inherently evil- sometimes, especially during times of war, it's the best choice.</p>
+            <p>The history of the world can be viewed as a series of experiments in building civilizations. The 20th century was essentially a battle between authoritarian and liberalism, which continues today.</p>
+            <p>Most people don't care to participate in politics. They are happy to be the subjects of a ruler as long as they're basically free and have basic legal protections. In some ways they prefer it because they're not sticking their neck out.</p>
+            <h2>Casino</h2>
+            <p>I designed some slot machines and built a small casino in the center of the city. I learned that they make an enormous amount of money, but mostly because there are a small number of people who have issues with gambling. After losing money, many people believe that if they just play a little more they can win it back and go home having broke even, but the math is against them.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ls4kYNg8keU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section id="section-virtual-worlds">
+        <div class="content-wrapper">
+            <h1>Virtual worlds</h1>
+            <p>The Metaverse is nothing new. Virtual worlds have been around for a long time (e.g. World of WarCraft, Runescape, Club Penguin). Immersion does not require realism.</p>
+            <h2>Virtual education</h2>
+            <p>Like a good book that you can revisit over and over to learn new lessons, virtual worlds allow you to rapidly learn new lessons.</p>
+            <ul>
+                <li>The fact that we prefer virtual worlds is a critique of the real world (Reality is Broken).</li>
+                <li>Playing in a virtual world as a way to learn about the real world, very different to play and test ideas than to just read. Reading books on politics/economics was like a cheat code.</li>
+                <li>Civ is a sandbox. Real life is too, but it doesn't feel like it. You don't really get to play real life until you're financially independent. But even then most people don't think that way.</li>
+                <li>Observation that people have a lot of creativity/grand ideas in game worlds that doesn't come through in the real world. Real world has a lot of friction, which is depressing. Why is Civ addictive ("Civ crack") but the real world is not?</li>
+            </ul>
+            <h2>Virtual economy</h2>
+            <p>Evolution of money (diamonds versus stamina, two-currency systems)</p>
+            <p>Issues with creating fiat currency.</p>
+            <p>Lack of wealth sinks leads to stagnation. Accelerationism.</p>
+            <p>No way to convert wealth to force.</p>
+        </div>
+    </section>
+    <section id="section-further-reading">
+        <div class="content-wrapper">
+            <h1>Further reading</h1>
+            <p>We were influenced by a lot of ideas:</p>
+            <ol>
+                <li>Henry George. 1879. Progress and Poverty.</li>
+                <li>Ayn Rand. 1957. Atlas Shrugged.</li>
+                <li>Jane Jacobs. 1961. The Death and Life of Great American Cities.</li>
+                <li>Murray Rothbard. 1973 For a New Liberty: The Libertarian Manifesto.</li>
+                <li>Neal Stephenson. 1992. Snow Crash.</li>
+                <li>Andrew Price. 2012. <a href="http://www.andrewalexanderprice.com/blog20121015.php">Place and Non-Places in Cities</a>.</li>
+                <li>Peter Thiel with Blake Masters. 2014. Zero to One: Notes on Startups, or How to Build the Future.</li>
+                <li>Soren Johnson. 2016. Offworld Trading Company.</li>
+            </ol>
+        </div>
+    </section>
+  </body>
+</html>
